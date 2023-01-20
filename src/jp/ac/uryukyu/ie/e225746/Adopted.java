@@ -3,12 +3,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Adopted {
-    ArrayList<Integer> nonAdoptedPeople;
-    int AdoptedPeple;
+    private ArrayList<Integer> nonAdoptedPeople;
 
     public Adopted(){
         this.nonAdoptedPeople = new ArrayList<Integer>();
-        this.AdoptedPeple = -1;
     }
 
     public void setNonAdopted(int _nonAdopted){

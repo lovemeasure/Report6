@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Score {
     private int numPeople;
-    int adoptedPeople;
+    private int adoptedPeople;
 
     public Score(){
         this.numPeople = -1;

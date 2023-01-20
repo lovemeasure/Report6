@@ -35,3 +35,20 @@ n人の秘書を順に面接を行います。
 相対順位が1位ではない秘書に対してはスキップされるようになっています。
 
 また、誰かを採用をした場合、全ての応募者に対してスキップがなされるようになっています。
+
+# ディレクトリ構成
+
+
+    ├── README.md
+    └── src
+        └── jp
+            └── ac
+                └── uryukyu
+                    └── ie
+                        └── e225746
+                            ├── Adopted.java
+                            ├── Explanation.java
+                            ├── Interview.java
+                            ├── Main.java
+                            ├── Score.java
+                            └── Secretary.java

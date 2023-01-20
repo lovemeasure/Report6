@@ -2,16 +2,15 @@ package jp.ac.uryukyu.ie.e225746;
 import java.util.Scanner;
 
 public class Interview {
-    int numInterviewed;
-    Score sc = new Score();
-    Adopted a = new Adopted();
-    Secretary se = new Secretary();
+    private int numInterviewed;
+    protected Score sc = new Score();
+    private Adopted a = new Adopted();
+    private Secretary se = new Secretary();
 
 
     public Interview(){
         this.numInterviewed = 0;
     }
-
 
     public void StartInterview(){
         Boolean adoptedFlag = true;

@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.ArrayList;
 
 public class Secretary {
-    ArrayList<Integer> secretaries;
+    private ArrayList<Integer> secretaries;
 
     public Secretary(){
         this.secretaries = new ArrayList<Integer>();
