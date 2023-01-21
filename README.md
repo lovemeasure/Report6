@@ -40,15 +40,35 @@ n人の秘書を順に面接を行います。
 
 
     ├── README.md
-    └── src
-        └── jp
-            └── ac
-                └── uryukyu
-                    └── ie
-                        └── e225746
-                            ├── Adopted.java
-                            ├── Explanation.java
-                            ├── Interview.java
-                            ├── Main.java
-                            ├── Score.java
-                            └── Secretary.java
+    ├── app
+    │   ├── build.gradle
+    │   └── src
+    │       ├── main
+    │       │   ├── java
+    │       │   │   └── jp
+    │       │   │       └── ac
+    │       │   │           └── uryukyu
+    │       │   │               └── ie
+    │       │   │                   └── e225746
+    │       │   │                       ├── Adopted.java
+    │       │   │                       ├── Explanation.java
+    │       │   │                       ├── Interview.java
+    │       │   │                       ├── Main.java
+    │       │   │                       ├── Score.java
+    │       │   │                       └── Secretary.java
+    │       │   └── resources
+    │       └── test
+    │           ├── java
+    │           │   └── jp
+    │           │       └── ac
+    │           │           └── uryukyu
+    │           │               └── ie
+    │           │                   └── e225746
+    │           └── resources
+    ├── gradle
+    │   └── wrapper
+    │       ├── gradle-wrapper.jar
+    │       └── gradle-wrapper.properties
+    ├── gradlew
+    ├── gradlew.bat
+    └── settings.gradle
