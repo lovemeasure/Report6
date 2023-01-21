@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class Secretary {
     private ArrayList<Integer> secretaries;
 
-    public Secretary(){
+    protected Secretary(){
         this.secretaries = new ArrayList<Integer>();
     }
 
-    public void secretarySetting(int numPeople){
+    protected void secretarySetting(int numPeople){
         ArrayList<Integer> list = new ArrayList<Integer>();
         for(int i = 1 ; i <= numPeople ; i++) {
             list.add(i);
@@ -18,32 +18,15 @@ public class Secretary {
         this.secretaries = list;
     }
 
-    public int getOneOfSecretary(int n){
+    protected int getOneOfSecretary(int n){
         return this.secretaries.get(n);
     }
 
-    public void getSecretary(){
-        
-    }
-
-    public void PrintgetSecretary(){
-        System.out.println(this.secretaries+" デバック用");
-    } 
-
-
-
-
-
-
-
-
-
-
-    public int getSecretaries(int n){
+    protected int getSecretaries(int n){
         return this.secretaries.get(n);
     }
 
-    public int getBestPersonIndex(){
+    protected int getBestPersonIndex(){
         int min = Collections.min(this.secretaries);
         int minIndex = this.secretaries.indexOf(min);
         return minIndex;

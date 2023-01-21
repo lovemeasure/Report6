@@ -1,4 +1,4 @@
-package jp.ac.uryukyu.ie.e225746;
+import jp.ac.uryukyu.ie.e225746.*;
 
 public class Main {
     public static void main(String[] args){
@@ -9,6 +9,7 @@ public class Main {
         Interview i = new Interview();//難易度設定、ゲーム
         i.StartInterview();
 
-        i.sc.resultsDisplay();//リザルト
+        Score sc = i.getsc();
+        sc.resultsDisplay();//リザルト
     }
 }

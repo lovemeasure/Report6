@@ -5,32 +5,10 @@ public class Score {
     private int numPeople;
     private int adoptedPeople;
 
-    public Score(){
+    protected Score(){
         this.numPeople = -1;
         this.adoptedPeople = -1;
     }
-
-    public void difficultySetting(){
-        System.out.println("難易度設定");
-        System.out.println("何人の秘書が応募してきましたか？");
-        System.out.print(">>> ");
-
-        Scanner scanner = new Scanner(System.in);
-        int input = scanner.nextInt();
-        System.out.println("\n");
-
-        this.numPeople = input;
-    }
-
-    public int getDifficulty(){
-        return this.numPeople;
-    }
-
-    public void setAdoptedPeople(int n){
-        this.adoptedPeople = n;
-    }
-
-
 
     public void resultsDisplay(){
         System.out.println("あなたが採用した人は "+numPeople+" 人中");
@@ -54,5 +32,25 @@ public class Score {
             System.out.println("GAMEOVER");
             System.out.println("\n");
         }
+    }
+
+    protected void difficultySetting(){
+        System.out.println("難易度設定");
+        System.out.println("何人の秘書が応募してきましたか？");
+        System.out.print(">>> ");
+
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+        System.out.println("\n");
+
+        this.numPeople = input;
+    }
+
+    protected int getDifficulty(){
+        return this.numPeople;
+    }
+
+    protected void setAdoptedPeople(int n){
+        this.adoptedPeople = n;
     }
 }

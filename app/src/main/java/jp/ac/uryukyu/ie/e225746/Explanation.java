@@ -24,14 +24,12 @@ public class Explanation{
 
             if (input == 3){
                 System.out.println("\n");
-                //scanner.close();//閉じると使えなくなるんだっけ？
             }
-
         }while(flag);
         
     }
 
-    public void content(int num){
+    private void content(int num){
         if (num == 0){
             System.out.println("wikipedia参照");
             System.out.println();

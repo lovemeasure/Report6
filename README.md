@@ -39,12 +39,14 @@ n人の秘書を順に面接を行います。
 # ディレクトリ構成
 
 
+    .
     ├── README.md
     ├── app
     │   ├── build.gradle
     │   └── src
     │       ├── main
     │       │   ├── java
+    │       │   │   ├── Main.java
     │       │   │   └── jp
     │       │   │       └── ac
     │       │   │           └── uryukyu
@@ -53,7 +55,6 @@ n人の秘書を順に面接を行います。
     │       │   │                       ├── Adopted.java
     │       │   │                       ├── Explanation.java
     │       │   │                       ├── Interview.java
-    │       │   │                       ├── Main.java
     │       │   │                       ├── Score.java
     │       │   │                       └── Secretary.java
     │       │   └── resources

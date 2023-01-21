@@ -5,25 +5,11 @@ import java.util.Collections;
 public class Adopted {
     private ArrayList<Integer> nonAdoptedPeople;
 
-    public Adopted(){
+    protected Adopted(){
         this.nonAdoptedPeople = new ArrayList<Integer>();
     }
 
-    public void setNonAdopted(int _nonAdopted){
-        this.nonAdoptedPeople.add(_nonAdopted);
-    }
-
-    public void getNonAdoptedPeople(){
-        
-    }
-
-    public void PrintgetNonAdoptedPeople(){
-        System.out.println(this.nonAdoptedPeople+"デバック用");        
-    }
-
-
-    
-    public Boolean isRelativeBest(int interviewer){
+    protected Boolean isRelativeBest(int interviewer){
         /*本来は相対順位を返すメソッドにする予定ではあるが、
          * 相対順位が1位でない場合採用が強制スキップされる仕様なので
          * 相対順位が1位である場合Trueを、
@@ -34,9 +20,12 @@ public class Adopted {
         return (interviewer <= min);
     }
 
-    public Boolean isAbsoluteBest(){
+    protected Boolean isAbsoluteBest(){
         int min = Collections.min(this.nonAdoptedPeople);
         return (min == 1);
     }
-        
+
+    protected void setNonAdopted(int _nonAdopted){
+        this.nonAdoptedPeople.add(_nonAdopted);
+    }   
 }
