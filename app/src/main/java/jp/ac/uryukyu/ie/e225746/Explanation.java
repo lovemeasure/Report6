@@ -1,8 +1,15 @@
 package jp.ac.uryukyu.ie.e225746;
 import java.util.Scanner;
 
+
+/**
+ * ゲーム前の説明に関するクラス
+ */
 public class Explanation{
 
+    /**
+     * どの説明を表示するか入力を求めるメソッド
+     */
     public void whatExplanation(){
         boolean flag;
 
@@ -29,6 +36,10 @@ public class Explanation{
         
     }
 
+    /**
+     * 入力された数字に応じて、説明を表示するメソッド
+     * @param num 説明番号
+     */
     private void content(int num){
         if (num == 0){
             System.out.println("wikipedia参照");

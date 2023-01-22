@@ -65,6 +65,7 @@ n人の秘書を順に面接を行います。
     │           │           └── uryukyu
     │           │               └── ie
     │           │                   └── e225746
+    │           │                       └── SecretaryTest.java
     │           └── resources
     ├── gradle
     │   └── wrapper
